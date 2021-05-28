@@ -1,0 +1,13 @@
+.entrycontainer {
+  padding: 20px;
+  color: white;
+}
+
+.entrycontainer h2 {
+  text-align: center;
+}
+
+.entrycontainer ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=EntryRequirements.module.css.map */

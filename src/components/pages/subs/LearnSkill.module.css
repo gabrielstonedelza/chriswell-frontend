@@ -1,0 +1,59 @@
+.skillcontainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../subs//christina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.skillcontainer .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.459);
+  z-index: 1;
+  opacity: 1;
+}
+
+.skillcontainer .skiiltext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+  color: white;
+  top: 20%;
+}
+
+.skillcontainer .skiiltext .onoverlay h2 {
+  font-weight: bold;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.skillcontainer .skiiltext .onoverlay h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.skillcontainer .skiiltext .onoverlay h4 {
+  padding: 10px;
+  text-align: center;
+}
+
+.skillcontainer .skiiltext .onoverlay .text {
+  text-align: center;
+  padding: 9px;
+  font-size: 30px;
+}
+/*# sourceMappingURL=LearnSkill.module.css.map */

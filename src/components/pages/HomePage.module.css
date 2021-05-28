@@ -1,0 +1,85 @@
+.homecontainer {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f57803), to(#f5d020));
+  background-image: linear-gradient(to right, #f57803, #f5d020);
+}
+
+.homecontainer .jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.homecontainer .jumbotron .jumbolists1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 20px;
+}
+
+.homecontainer .jumbotron .jumbolists1 h5 {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.homecontainer .jumbotron .jumbolists1 .downloadlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.homecontainer .jumbotron .jumbolists1 .downloadlinks .downloadlink1 {
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f57803), to(#f5d020));
+  background-image: linear-gradient(to right, #f57803, #f5d020);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 24px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.homecontainer .jumbotron .jumbolists1 .downloadlinks .downloadlink1:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5d020), to(#f57803));
+  background-image: linear-gradient(to right, #f5d020, #f57803);
+  color: white;
+}
+
+.homecontainer .jumbotron .jumbolists1 .downloadlinks .downloadlink2 {
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f57803), to(#f5d020));
+  background-image: linear-gradient(to right, #f57803, #f5d020);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 24px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.homecontainer .jumbotron .jumbolists1 .downloadlinks .downloadlink2:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5d020), to(#f57803));
+  background-image: linear-gradient(to right, #f5d020, #f57803);
+  color: white;
+}
+
+.homecontainer .jumbotron .poster img {
+  width: 100%;
+}
+/*# sourceMappingURL=HomePage.module.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,KAAK;CAOf;;AATD,AAGI,eAHW,CAGX,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB;;AALL,AAMI,eANW,CAMX,EAAE,CAAA;EACE,eAAe,EAAE,IAAI;CACxB",
+    "sources": [
+        "EntryRequirements.module.scss"
+    ],
+    "names": [],
+    "file": "EntryRequirements.module.css"
+}
