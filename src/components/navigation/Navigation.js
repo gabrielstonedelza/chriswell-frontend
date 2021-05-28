@@ -21,8 +21,8 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link to="/registration" className={classes.sitelink}>
-                Register
+              <Link to="/courses" className={classes.sitelink}>
+                Courses
               </Link>
             </li>
             <li>
