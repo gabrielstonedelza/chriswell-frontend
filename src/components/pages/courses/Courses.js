@@ -34,7 +34,8 @@ const Registration = () => {
           </div>
         </div>
         <div className={classes.courseitem}>
-          <h2 className={classes.coursetitle}>Master Courses</h2>
+          <h2 className={classes.coursetitle}>Practical Courses</h2>
+          <div className={classes.card}>GRAPHIC DESIGN</div>
           <div className={classes.card}>WEB APPLICATION DEVELOPMENT</div>
           <div className={classes.card}>MOBILE APPLICATION DEVELOPMENT</div>
         </div>

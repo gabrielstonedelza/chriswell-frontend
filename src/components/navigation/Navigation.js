@@ -21,6 +21,11 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
+              <Link to="/register" className={classes.sitelink}>
+                Register
+              </Link>
+            </li>
+            <li>
               <Link to="/courses" className={classes.sitelink}>
                 Courses
               </Link>

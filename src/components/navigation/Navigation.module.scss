@@ -1,6 +1,9 @@
 nav{
+  transition: ease 1s;
   width: 100%;
-  height: 80px;
+  height: 90px;
+  position: fixed;
+  z-index: 4;
   background-image: linear-gradient(to right,#f5d020,#f57803);
   
   .navigationitems {

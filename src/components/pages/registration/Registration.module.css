@@ -1,0 +1,68 @@
+h2 {
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+form {
+  margin: auto;
+  width: 60%;
+}
+
+form .formcontrol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+form .formcontrol label {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+form .formcontrol input {
+  height: 35px;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+form .formcontrol select {
+  height: 35px;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+form .registerbutton {
+  display: block;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f57803), to(#f5d020));
+  background-image: linear-gradient(to right, #f57803, #f5d020);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form .registerbutton:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5d020), to(#f57803));
+  background-image: linear-gradient(to right, #f5d020, #f57803);
+  color: white;
+}
+/*# sourceMappingURL=Registration.module.css.map */
