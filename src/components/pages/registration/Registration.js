@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import classes from "./Registration.module.css";
 import { ToastContainer, toast } from "react-toastify";
-import Select from "react-select";
 import axios from "axios";
-var nodemailer = require("nodemailer");
+
+
+
 
 const Registration = () => {
+
   const history = useHistory();
 
   const [name, setName] = useState("");
@@ -22,7 +24,7 @@ const Registration = () => {
   };
 
   const handleSelect = (e) => {
-    setCourse(e.target.value );
+    setCourse(e.target.value);
   };
 
   const formData = new FormData();
@@ -36,8 +38,8 @@ const Registration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const api = "http://127.0.0.1:8000/api/register/";
+    toast.success("please wait")
+    const api = "http://127.0.0.1:8000/api/student-registration/";
 
     axios({
       method: "POST",
@@ -45,14 +47,14 @@ const Registration = () => {
       data: formData,
     })
       .then((response) => {
-        toast.success("Your account was created successfully,please check your email.");
+        toast.success("Your registration was success,please check your email.")
         setName('')
-        setEmail("");
-        setPhone("");
-        setDob("");
-        setCurrentQualification("");
-        setCourse("");
-        setProfilePicture([]);
+        setEmail('')
+        setPhone('')
+        setDob('')
+        setCurrentQualification('')
+        setCourse('')
+        setProfilePicture('')
       })
       .catch((error) => {
         if (error.response) {

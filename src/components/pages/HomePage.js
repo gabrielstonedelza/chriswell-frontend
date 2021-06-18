@@ -42,6 +42,7 @@ const HomePage = () => {
       </div>
       <LearnSkill />
       <EntryRequirements />
+      <br />
       <Footer />
     </div>
   );

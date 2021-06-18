@@ -2,10 +2,9 @@
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
   .mapcontainer {
-    flex: 1;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -18,7 +17,6 @@
       }
   }
   form {
-    flex: 2;
     .contactus {
       color: white;
       padding-left: 10px;
@@ -53,6 +51,8 @@
         }
       }
       .sendbutton {
+        cursor: pointer;
+        font-size: 20px;
         background-image: linear-gradient(to right, #f57803, #f5d020);
         text-decoration: none;
         font-weight: bold;
@@ -61,7 +61,7 @@
         padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-        border-radius: 24px;
+        border-radius: 5px;
         border: none;
         outline: none;
         &:hover {
