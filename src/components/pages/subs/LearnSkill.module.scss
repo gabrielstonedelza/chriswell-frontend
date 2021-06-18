@@ -16,6 +16,7 @@
   }
 
   .skiiltext {
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +47,109 @@
         }
     }
   }
+}
+
+// media queries
+@media(max-width: 700px){
+  .skillcontainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../subs//christina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .skiiltext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+    top: 20%;
+    .onoverlay{
+        h2{
+            font-weight: bold;
+            font-size: 35px;
+            padding: 20px;
+            text-align: center;
+        }
+        h3{
+            padding: 10px;
+            text-align: center;
+        }
+        h4{
+            padding: 10px;
+            text-align: center;
+        }
+        .text{
+            text-align: center;
+            padding: 9px;
+            font-size: 20px;
+        }
+    }
+  }
+}
+}
+
+@media(max-width: 600px){
+    .skillcontainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../subs//christina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .skiiltext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+    top: 20%;
+    .onoverlay{
+        h2{
+            font-weight: bold;
+            font-size: 35px;
+            padding: 20px;
+            text-align: center;
+        }
+        h3{
+            padding: 10px;
+            text-align: center;
+        }
+        h4{
+            padding: 10px;
+            text-align: center;
+        }
+        .text{
+            text-align: center;
+            padding: 9px;
+            font-size: 20px;
+        }
+    }
+  }
+}
 }

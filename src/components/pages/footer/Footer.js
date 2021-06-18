@@ -1,4 +1,5 @@
 import classes from './Footer.module.css'
+import Havens from '../../assets/images/havens.JPG'
 const Footer = () => {
     return (
         <div className={classes.footercontainer}>
@@ -14,7 +15,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className={classes.cright}>
-            &copy;2021 Copyright:CSBT.com
+                &copy;2021 Copyright:CSBT.com <small className={classes.textmuted}>
+                    
+                    Havens Software Development
+                    </small>
             </div>
         </div>
     )

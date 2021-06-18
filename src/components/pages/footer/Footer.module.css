@@ -35,4 +35,9 @@
   color: white;
   font-weight: bold;
 }
+
+.footercontainer .cright small {
+  padding-left: 10px;
+  padding-right: 5px;
+}
 /*# sourceMappingURL=Footer.module.css.map */
