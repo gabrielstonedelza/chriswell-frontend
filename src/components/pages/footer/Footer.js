@@ -1,5 +1,5 @@
 import classes from './Footer.module.css'
-import Havens from '../../assets/images/havens.JPG'
+
 const Footer = () => {
     return (
         <div className={classes.footercontainer}>

@@ -1,0 +1,46 @@
+.studentcontainer {
+  position: relative;
+  border-radius: 5px;
+}
+
+.studentcontainer .studentbox {
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  position: relative;
+  width: 300px;
+}
+
+.studentcontainer .studentbox .imagecontainer img {
+  width: 300px;
+  height: 300px;
+}
+
+.studentcontainer .studentbox .otherinfo {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.studentcontainer .studentbox .otherinfo .infocontainer {
+  display: none;
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.studentcontainer .studentbox:hover .infocontainer,
+.studentcontainer .studentbox:hover .otherinfo {
+  display: block;
+}
+
+.studentcontainer .studentbox:hover .imagecontainer {
+  display: none;
+}
+/*# sourceMappingURL=Student.module.css.map */

@@ -4,11 +4,7 @@ import classes from "./Registration.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 
-
-
-
 const Registration = () => {
-
   const history = useHistory();
 
   const [name, setName] = useState("");
@@ -23,9 +19,6 @@ const Registration = () => {
     setProfilePicture(e.target.files[0]);
   };
 
-  const handleSelect = (e) => {
-    setCourse(e.target.value);
-  };
 
   const formData = new FormData();
   formData.append("name", name);
@@ -33,32 +26,35 @@ const Registration = () => {
   formData.append("phone", phone);
   formData.append("date_of_birth", dob);
   formData.append("current_qualification", currentQualification);
-  formData.append("select_course", course);
+  formData.append("course", course);
   formData.append("profile_picture", profilepicture);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success("please wait")
+    toast.success("please wait,processing your form data.");
+
     const api = "http://127.0.0.1:8000/api/student-registration/";
 
     axios({
       method: "POST",
       url: api,
       data: formData,
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
       .then((response) => {
-        toast.success("Your registration was success,please check your email.")
-        setName('')
-        setEmail('')
-        setPhone('')
-        setDob('')
-        setCurrentQualification('')
-        setCourse('')
-        setProfilePicture('')
+        history.push("/success");
       })
       .catch((error) => {
         if (error.response) {
-          toast.error(`${error.response.data["email"]}`);
+          if (error.response.data["select_course"]) {
+            toast.error(`${error.response.data["select_course"]}`);
+          }
+          if (error.response.data["email"]) {
+            toast.error(`${error.response.data["email"]}`);
+          }
+          console.log(error.response.data);
         }
       });
   };
@@ -125,40 +121,18 @@ const Registration = () => {
           />
         </div>
         <div className={classes.formcontrol}>
-          <label htmlFor="course">Select Course</label>
-
-          <select
-            name="select"
-            id="select"
+          <label htmlFor="course">Enter Course</label>
+          <input
+            name="course"
+            id="course"
+            required
+            type="text"
             value={course}
-            onChange={(e) => handleSelect(e)}
-          >
-            <option value="DIPLOMA IN ACCOUNTING">DIPLOMA IN ACCOUNTING</option>
-            <option value="DIPLOMA IN BUSINESS ADMINISTRATION">
-              DIPLOMA IN BUSINESS ADMINISTRATION
-            </option>
-            <option value="DIPLOMA IN OFFICE MANAGEMENT">
-              DIPLOMA IN OFFICE MANAGEMENT
-            </option>
-            <option value="DIPLOMA IN INFORMATION TECHNOLOGY">
-              DIPLOMA IN INFORMATION TECHNOLOGY
-            </option>
-            <option value="CERTIFICATE IN ACCOUNTING">
-              CERTIFICATE IN ACCOUNTING
-            </option>
-            <option value="CERTIFICATE IN BUSINESS STUDIES">
-              CERTIFICATE IN BUSINESS STUDIES
-            </option>
-            <option value="CERTIFICATE IN SECRETARIAL DUTIES">
-              CERTIFICATE IN SECRETARIAL DUTIES
-            </option>
-            <option value="NETWORKING">NETWORKING</option>
-            <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
-            <option value="MOBILE APP DEVELOPMENT">
-              MOBILE APP DEVELOPMENT
-            </option>
-          </select>
+            placeholder="hope you've gone through our list of courses"
+            onChange={(e) => setCourse(e.target.value)}
+          />
         </div>
+
         <div className={classes.formcontrol}>
           <label htmlFor="picture">Profile Picture</label>
           <input
@@ -169,9 +143,11 @@ const Registration = () => {
             onChange={(e) => checkFile(e)}
           />
         </div>
-        <button type="submit" className={classes.registerbutton}>
-          Register
-        </button>
+        <div className={classes.formcontrol}>
+          <button type="submit" className={classes.registerbutton}>
+            Register
+          </button>
+        </div>
         <ToastContainer />
       </form>
       <br />

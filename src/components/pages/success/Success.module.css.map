@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,KAAK;CAKf;;AAPD,AAGI,YAHQ,CAGR,CAAC,CAAA;EACG,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "Success.module.scss"
+    ],
+    "names": [],
+    "file": "Success.module.css"
+}
