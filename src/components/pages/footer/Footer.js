@@ -5,6 +5,7 @@ const Footer = () => {
         <div className={classes.footercontainer}>
             <div className={classes.mapcontact}>
                 <iframe
+                    title="school-location"
                     id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Amakom%20Traffic%20Light&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 ></iframe>
