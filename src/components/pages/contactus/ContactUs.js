@@ -19,7 +19,7 @@ const ContactUs = () => {
   const onSubmitHandler = (event) => {
     event.preventDefault()
     toast.success("please wait sending your message")
-    const api = "http://127.0.0.1:8000/api/contact-school/"
+    const api = "https://chriswellschool.com/contact-school/"
 
     axios({
       method: 'POST',

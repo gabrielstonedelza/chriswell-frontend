@@ -33,7 +33,7 @@ const Registration = () => {
     e.preventDefault();
     toast.success("please wait,processing your form data.");
 
-    const api = "http://127.0.0.1:8000/api/student-registration/";
+    const api = "https://chriswellschool.com/student-registration/";
 
     axios({
       method: "POST",
